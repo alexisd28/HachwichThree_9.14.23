@@ -11,12 +11,13 @@ class ViewController: UIViewController
 {
     //please declare your global variables here
     
+    //class
     @IBOutlet weak var cool: UILabel!
     
     var firstString = "The background color will turn blue"
     var secondString = "The background color will turn green"
     var thirdString = "cool"
-    
+    var fourthString = "text change button should change"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -39,6 +40,19 @@ class ViewController: UIViewController
             //the label is under the change color button and the text color is white
             
         }
-        //print(
+        
+    }
+    
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBAction func textChangeButtonPressed(_ sender: UIButton) {
+        
+        if fourthString == "text change button should change"
+        {
+            print(firstLabel.text = "Sometimes coding is frustrating")
+        }
+        else
+        {
+            print(firstLabel.text = "not working")
+        }
     }
 }
