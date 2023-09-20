@@ -18,6 +18,12 @@ class ViewController: UIViewController
     var secondString = "The background color will turn green"
     var thirdString = "cool"
     var fourthString = "text change button should change"
+    //problem set 2
+    let temp = 15
+    let count = 0
+    let block = 5
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -44,6 +50,7 @@ class ViewController: UIViewController
     }
     
     @IBOutlet weak var firstLabel: UILabel!
+    
     @IBAction func textChangeButtonPressed(_ sender: UIButton) {
         
         if fourthString == "text change button should change"
@@ -53,6 +60,18 @@ class ViewController: UIViewController
         else
         {
             print(firstLabel.text = "not working")
+        }
+    }
+    @IBAction func additionButtonPressed(_ sender: UIButton)
+    {
+       if temp < count
+        {
+           print("The code in this block will not execute")
+       }
+        else
+        {
+            print(self.view.backgroundColor = UIColor.systemGreen)
+            print(block)
         }
     }
 }
